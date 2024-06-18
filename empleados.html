@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/empleados.css">
+    <script src="js/empleados.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <title>Página de Empleados</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logointecap animate__animated animate__bounceInLeft animate__slowed">
+            <img src="img/logo.jpg" class="imaintecap" width="250px" height="150px" alt="">
+        </div>
+        <div class="logos animate__animated animate__bounceInLeft animate__slowed animate__delay-1s">
+            <a href="https://www.facebook.com/intecapoficial/?locale=es_LA"><img src="img/logofacebook.jpg" width="55px"
+                    height="45px" class="imagen" alt=""></a>
+            <a href="https://twitter.com/intecapoficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img
+                    src="img/logox.png" width="60px" height="45px" class="imagen" alt=""></a>
+            <a href="https://www.instagram.com/intecapoficial/?hl=es"><img src="img/logoig.png" width="45px"
+                    class="imagen" height="45px" alt=""></a>
+            <a href="https://www.youtube.com/intecapoficial"><img src="img/logoy.jpg" width="55px" class="imagen"
+                    height="45px" alt=""></a>
+            <a href="https://gt.linkedin.com/school/intecapoficial/"><img src="img/link.png" width="60px" class="imagen"
+                    height="45px" alt=""></a>
+        </div>
+    </header>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li class="active"><a href="index.html" class="links">Inicio</a></li>
+            <li class=""><a href="empleados.html" class="links">Empleados</a></li>
+            <li class=""><a href="sueldoliquido.html" class="links">Sueldo Líquido</a></li>
+            <li class=""><a href="indemnizacion.html" class="links">Indemnización</a></li>
+        </ul>
+    </nav>
+    <section id="maquetacion">
+        <div class="body">
+            <div class="content-wrapper">
+                <div class="wrapper">
+                    <form class="form">
+                        <h1>Empleado</h1>
+                        <div id="inp">
+                            <input type="text" id="nombreIngresado" class="input" placeholder="Ingrese su nombre">
+                        </div>
+                        <div>
+                            <input type="date" class="input" id="inp1" placeholder="Fecha de Ingreso">
+                            <input type="text" class="input" id="inp2" placeholder="Puesto">
+                            <input type="number" class="input" id="inp3" placeholder="Salario">
+                        </div>
+                        <button type="button" id="texto-cont" onclick="mostrarDatos()" class="submit">Guardar</button>
+                    </form>
+                </div>
+                <div class="table-wrapper">
+                    <h2>Lista de Empleados</h2>
+                    <div id="botonesAYE" class="botonPagina2">
+                        <button id="btnEliminarA" class="botonA" type="button">Eliminar Primero</button>
+                        <button id="btnEliminarB" class="botonA" onclick="eliminarUltima()" type="button">Eliminar
+                            Último</button>
+                    </div>
+                    <table id="tabla">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Fecha de Ingreso</th>
+                                <th>Puesto</th>
+                                <th>Salario</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+                            <tr id="tr1">
+                                <td>Luisa Quiñonez</td>
+                                <td>2020-09-12</td>
+                                <td>Secretaria</td>
+                                <td>2500</td>
+                            </tr>
+                            <tr>
+                                <td>Roxana Lopez</td>
+                                <td>2021-09-10</td>
+                                <td>Secretaria</td>
+                                <td>2500</td>
+                            </tr>
+                            <tr id="datosNuevos">
+                                <td>Jimena Meléndez</td>
+                                <td>2015-05-02</td>
+                                <td>Gerente</td>
+                                <td>4000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <img src="img/logointecap51.jpg" width="180px" height="180px"
+        style="margin-left: 140px; border-radius: 55px; box-shadow: 20px 0px 20px; color: rgb(66, 54, 54);">
+    <script>
+        $(document).ready(function () {
+            $("#tr1").show();
+            $("#btnEliminarA").click(function () {
+                $("#tr1").hide(1000);
+            });
+        });
+    </script>
+</body>
+
+</html>

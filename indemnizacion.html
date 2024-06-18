@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indemnización</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/2-indemnizacion.js" defer></script>
+    <link rel="stylesheet" href="css/soluciones.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body id="bodyindeminzacion">
+
+    <header>
+        <div class="logointecap animate__animated animate__bounceInLeft animate__slowed">
+            <img src="img/logo.jpg" class="imaintecap" width="250px" height="150px" alt="">
+        </div>
+        <div class="logos animate__animated animate__bounceInLeft animate__slowed animate__delay-1s">
+            <a href="https://www.facebook.com/intecapoficial/?locale=es_LA"><img src="img/logofacebook.jpg"
+                    width="55px" height="45px" class="imagen" alt=""></a>
+            <a href="https://twitter.com/intecapoficial?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img
+                    src="img/logox.png" width="60px" height="45px" class="imagen" alt=""></a>
+            <a href="https://www.instagram.com/intecapoficial/?hl=es"><img src="img/logoig.png" width="45px"
+                    class="imagen" height="45px" alt=""></a>
+            <a href="https://www.youtube.com/intecapoficial"><img src="img/logoy.jpg" width="55px" class="imagen"
+                    height="45px" alt=""></a>
+            <a href="https://gt.linkedin.com/school/intecapoficial/"><img src="img/link.png" width="60px"
+                    class="imagen" height="45px" alt=""></a>
+        </div>
+    </header>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li class="active"><a href="index.html" class="links">Inicio</a></li>
+            <li class=""><a href="empleados.html" class="links">Empleados</a></li>
+            <li class=""><a href="sueldoliquido.html" class="links">Sueldo Líquido</a></li>
+            <li class=""><a href="indemnizacion.html" class="links">Indemnización</a></li>
+        </ul>
+    </nav>
+
+    <br><br>
+
+    <div class="bodyindem">
+        <div class="wrapperindem">
+            <form class="form">
+                <h1>Empleado</h1>
+
+                <div id="inp">
+                    <input type="number" id="sueldoBase" class="input2" placeholder="Ingrese su sueldo base" required>
+                </div>
+
+                <div>
+                    <input type="number" class="input2" id="mesesTrabajados"
+                        placeholder="Meses trabajados (cálculo de bono y aguinaldo)">
+
+                    <input type="number" class="input2" id="añosTrabajados"
+                        placeholder="Años trabajados (cálculo de indemnización)">
+
+                    <input type="number" class="input2" id="salarioPendiente" placeholder="Salario pendiente">
+
+                    <input type="number" class="input2" id="deudas" placeholder="Deudas o cobros pendientes">
+
+                </div>
+                <button type="button" id="calcularButton" class="submitguardar">Calcular</button>
+
+            </form>
+        </div>
+    </div>
+    <div id="respuesta"></div>
+
+</body>
+
+</html>

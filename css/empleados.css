@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-image: linear-gradient(to left, rgb(36, 51, 90), rgb(2, 15, 54));
+    color: hsl(0, 0%, 100%);
+}
+
+/* Estilos para Header */
+header {
+    height: 150px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 50px;
+}
+
+.logos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 60px;
+}
+
+.imagen {
+    margin-right: 10px;
+    float: right;
+    margin-top: 70px;
+}
+
+/* Estilos para Navegación */
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 30px 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+li a.active,
+li a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+/*PAGINA 2*/
+
+#btnEliminarA,
+#btnEliminarB {
+    border-radius: 10px 10px;
+    background-color: rgb(255, 197, 39);
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    width: 180px;
+    box-shadow: 5px 5px;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 1px 0px 1px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#btnEliminarA:hover {
+    background-color: rgb(173, 137, 37);
+    color: rgb(255, 255, 255);
+
+}
+
+#btnEliminarB:hover {
+    background-color: rgb(173, 137, 37);
+    color: rgb(255, 255, 255);
+
+}
+
+#botonesAYE {
+    display: flex;
+    margin-left: 300px;
+    margin-bottom: 50px;
+}
+
+#maquetación {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+/* Contenedor principal */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 170px;
+}
+
+/* Estilos para el formulario */
+.wrapper {
+    flex: 1.2;
+    min-width: 300px;
+    
+}
+
+/* Estilos para la tabla y los botones */
+.table-wrapper {
+    flex: 3;
+    min-width: 450px;
+}
+
+table {
+    background-color: rgb(15, 14, 14);
+    color: rgb(255, 255, 255);
+    border-collapse: collapse;
+    font-size: 17px;
+    width: 700px;
+}
+
+th {
+    margin: 15px;
+    padding: 8px;
+}
+
+td {
+    margin: 15px;
+    padding: 15px;
+    border: rgb(255, 197, 71) 5px solid;
+    text-align: center;
+
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*INICIA FORMULARIO NEON*/
+
+::-webkit-input-placeholder {
+    color: #ffffff;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.wrapper {
+    margin-left: 30px;
+    width: 400px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 0 50px 0 rgb(0, 39, 211);
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inp1,
+#inp2,
+#inp3,
+#nombreIngresado,
+#añosTrabajados,
+#mesesTrabajados,
+#salarioPendiente,
+#deudas,
+#sueldoBase {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+    cursor: pointer;
+    color: white;
+}
+
+.input {
+    border: none;
+    outline: none;
+    background: none;
+    width: 350px;
+    margin-top: 40px;
+    padding-right: 10px;
+    font-size: 17px;
+}
+
+.submit {
+    border: none;
+    outline: none;
+    width: 150px;
+    margin-top: 25px;
+    margin-left: 100px;
+    padding: 10px 0;
+    font-size: 14px;
+    color: white;
+    border-radius: 40px;
+    letter-spacing: 10x;
+    cursor: pointer;
+    background: linear-gradient(45deg, rgb(66, 103, 173), rgb(4, 34, 89));
+}
+
+.submit:hover {
+    background: linear-gradient(45deg, rgb(54, 66, 87), rgb(2, 23, 63));
+}
+
+
+/*finaliza formulario neon*/
+
+
+
+/*MENU DE HAMBURGUESA*/
+
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.checkbtn {
+    font-size: 20px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+/* Media Query para pantallas menores a 678px */
+@media screen and (max-width: 678px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper,
+    .table-wrapper {
+        width: 100%;
+        min-width: auto;
+        margin-bottom: 50px;
+    }
+
+    ul {
+        position: fixed;
+        width: 95%;
+        height: 60vh;
+        background: #060329;
+        top: 280px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    li a.hover,
+    li a.active {
+        background: none;
+        color: rgb(0, 20, 46);
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+
+    .logos {
+        margin-top: 120px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .imagen {
+        margin: 10px 0;
+    }
+
+    .años {
+        margin: 20px 0;
+    }
+
+    .logoA {
+        width: 130px;
+        height: 320;
+    }
+
+    .wrapper {
+        margin-top: 130px;
+        margin-left: 15%;
+        width: 300px;
+        height: 400px;
+        box-shadow: 0 0 50px 0 rgb(0, 39, 211);
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #inp1,
+    #inp2,
+    #inp3,
+    #nombreIngresado,
+    #añosTrabajados,
+    #mesesTrabajados,
+    #salarioPendiente,
+    #deudas,
+    #sueldoBase {
+        padding-bottom: 10px;
+        border-bottom: 2px solid #eee;
+        display: grid;
+        grid-template-columns: auto;
+        margin-left: 50px;
+        cursor: pointer;
+        color: white;
+    }
+
+    .input {
+        border: none;
+        outline: none;
+        background: none;
+        width: 160px;
+        margin-top: 40px;
+        padding-right: 10px;
+        font-size: 14px;
+    }
+
+    .submit {
+        width: 80px;
+        margin-top: 20px;
+        margin-left: 70px;
+        padding: 10px 0;
+        font-size: 12px;
+    }
+
+    #btnEliminarA,
+    #btnEliminarB {
+        width: 100px;
+        font-size: 13px;
+    }
+
+    #botonesAYE {
+        display: flex;
+        align-items: center;
+        margin-left: 30%;
+    }
+
+    #maquetacion {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    table {
+        margin-top: 20px;
+        margin-left: 18%;
+        font-size: 13px;
+        width: 330px;
+    }
+
+}

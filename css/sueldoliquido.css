@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to left, rgb(36, 51, 90), rgb(2, 15, 54));
+    color: hsl(0, 0%, 100%);
+}
+
+/* Estilos para Header */
+header {
+    height: 150px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 50px;
+}
+
+.logos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 60px;
+}
+
+.imagen {
+    margin-right: 10px;
+    float: right;
+    margin-top: 70px;
+}
+
+/* Estilos para Navegación */
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 30px 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+li a.active,
+li a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+/*MENU DE HAMBURGUESA*/
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.checkbtn {
+    font-size: 20px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+section {
+    position: relative;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+    margin: 10px;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 50px 0 5px;
+    color: #ffffff;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    max-width: 3100px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+input:focus~label,
+input:valid~label {
+    top: -5px;
+}
+
+/* Estilos adicionales */
+.logo51 {
+    height: 600px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: 60px;
+    border-radius: 60px 0 60px 0;
+}
+
+.buttonSueldoLiquido {
+    color: rgb(0, 0, 0);
+    border-radius: 55px;
+    width: 500px;
+    height: 50px;
+    background-color: rgb(255, 186, 39);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: all 0.4s ease;
+}
+
+.buttonSueldoLiquido:hover {
+    background-color: rgb(173, 137, 37);
+    color: rgb(255, 255, 255);
+}
+
+#resultado {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 530px;
+    height: 200px;
+    font-size: 20px;
+    color: black;
+    padding: 30px;
+    text-align: center;
+    text-shadow: 1px 0px;
+}
+
+/* Contenedores principales */
+.contenFormularios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.contenFormularios span {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo-y-resultado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Media Query para pantallas menores a 768px */
+@media screen and (max-width: 768px) {
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 95%;
+        height: 60vh;
+        background: #060329;
+        top: 280px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    li a.hover,
+    li a.active {
+        background: none;
+        color: rgb(0, 20, 46);
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        margin-bottom: 70px;
+    }
+
+    .logos {
+        margin-top: 120px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .imagen {
+        margin: 10px 0;
+    }
+
+    .contenFormularios span {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .formulario1,
+    #formulario2 {
+        margin-bottom: 100px;
+        width: 300px;
+    }
+
+    .logo-y-resultado {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo51 {
+        width: 350px;
+        height: 300px;
+        margin: 20px 0;
+    }
+
+    .img51 {
+        width: 180px;
+        height: 190px;
+    }
+
+    .contenBoton {
+        margin: 20px 0;
+    }
+
+    .buttonSueldoLiquido {
+        margin: 20px auto;
+        width: 300px;
+    }
+
+    #resultado {
+        margin: 20px auto;
+        width: 320px;
+        height: 150px;
+    }
+}

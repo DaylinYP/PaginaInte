@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+
+}
+
+header {
+    height: 170px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 50px;
+    margin-right: 50px;
+}
+
+body {
+    background-image: linear-gradient(to left, rgb(36, 51, 90), rgb(2, 15, 54));
+    color: hsl(0, 0%, 100%);
+
+}
+
+.logos {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 60px;
+}
+
+.imagen {
+    margin-right: 10px;
+    float: right;
+    margin-top: 70px;
+}
+
+/*MENÚ*/
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 80px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 30px 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+li a.active,
+li a:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5;
+}
+
+
+
+/*PAGINA 3*/
+span {
+    display: flex;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+section {
+    margin-left: 120px;
+    position: relative;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 0 50px 0 5px;
+    color: #ffffff;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    max-width: 3100px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #ffffff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+}
+
+
+input:focus~label,
+input:valid~label {
+    top: -5px;
+}
+
+/*#####################################################*/
+#formulario2 {
+    margin-left: 150px;
+    position: relative;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+}
+
+.logo51 {
+    height: 600px;
+    width: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-left: 60px;
+    border-radius: 60px 0 60px 0;
+}
+
+.buttonSueldoLiquido {
+    color: rgb(0, 0, 0);
+    margin-top: 50px;
+    border-radius: 55px;
+    width: 500px;
+    height: 50px;
+    background-color: rgb(255, 186, 39);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    margin-left: 700px;
+}
+
+.buttonSueldoLiquido:hover {
+    background-color: rgb(173, 137, 37);
+    color: rgb(255, 255, 255);
+}
+
+#resultado {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 530px;
+    height: 100px;
+    font-size: 20px;
+    color: black;
+    margin-left: 660px;
+    margin-bottom: 30px;
+    padding: 30px;
+    text-align: center;
+    text-shadow: 1px 0px;
+}
+
+/*PAGINA 3*/
+.bodyindem {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapperindem {
+    position: relative;
+    width: 500px;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 0 50px 0 rgb(211, 162, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 90px;
+    margin-top: 50px;
+}
+
+.submitguardar {
+    border: none;
+    outline: none;
+    width: 150px;
+    margin-top: 25px;
+    margin-left: 30px;
+    padding: 10px 0;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    border-radius: 40px;
+    letter-spacing: 10x;
+    cursor: pointer;
+    text-shadow: 1px 0 1px;
+    background: linear-gradient(45deg, rgb(255, 204, 63), rgb(202, 140, 5));
+}
+
+.submitguardar:hover {
+    background: linear-gradient(45deg, rgb(219, 173, 47), rgb(155, 107, 4));
+    color: white;
+}
+
+#respuesta {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    font-size: 20px;
+    height: 100px;
+    width: 500px;
+    margin-left: 630px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    padding: 30px;
+    text-align: center;
+    text-shadow: 1px 0px;
+}
+
+.input2 {
+    border: none;
+    outline: none;
+    background: none;
+    width: 420px;
+    margin-top: 40px;
+    padding-right: 10px;
+    font-size: 15px;
+}
+
+.wrapper {
+    margin-top: 130px;
+    margin-left: 15%;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 50px 0 rgb(0, 39, 211);
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inp1,
+#inp2,
+#inp3,
+#nombreIngresado,
+#añosTrabajados,
+#mesesTrabajados,
+#salarioPendiente,
+#deudas,
+#sueldoBase {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+.input {
+    border: none;
+    outline: none;
+    background: none;
+    width: 160px;
+    margin-top: 40px;
+    padding-right: 10px;
+    font-size: 14px;
+}
+
+.submit {
+    width: 80px;
+    margin-top: 20px;
+    margin-left: 70px;
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+#btnEliminarA,
+#btnEliminarB {
+    width: 100px;
+    font-size: 13px;
+}
+
+#botonesAYE {
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+}
+
+#maquetacion {
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*MENU DE HAMBURGUESA*/
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.checkbtn {
+    font-size: 20px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 95%;
+        height: 60vh;
+        background: #060329;
+        top: 320px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+    }
+
+    nav ul li {
+        margin: 30px 0;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    li a.hover,
+    li a.active {
+        background: none;
+        color: rgb(0, 20, 46);
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+        margin-bottom: 70px;
+    }
+
+    .logos {
+        margin-top: 180px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .imagen {
+        margin: 10px 0;
+    }
+
+    .bodyindem {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapperindem {
+        position: relative;
+        width: 470px;
+        height: 60vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 90px;
+    }
+    .input2 {
+        margin-right: 20px;
+        border: none;
+        outline: none;
+        background: none;
+        width: 300px;
+        margin-top: 40px;
+        padding-right: 10px;
+        font-size: 15px;
+    }
+    #respuesta {
+        font-size: 18px;
+        height: 100px;
+        width: 300px;
+        margin-left: 60px;
+        padding: 20px;
+        text-align: center;
+    }
+}
